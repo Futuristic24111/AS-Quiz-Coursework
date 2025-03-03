@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Quiz_Coursework</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <None Remove="Entities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="0t0yhnro.4zt~" />
+    <None Remove="DragDropScreen.cs~RF1463baf.TMP" />
+    <None Remove="DragDropScreen.cs~RF178df7.TMP" />
+    <None Remove="DragDropScreen.cs~RF5b18212.TMP" />
+    <None Remove="DragDropScreen.cs~RF7556e1.TMP" />
+    <None Remove="DragDropScreen.cs~RFb2c0fc.TMP" />
+    <None Remove="DragDropScreen.cs~RFd6a92.TMP" />
+    <None Remove="EndScreen.cs~RF1734eb.TMP" />
+    <None Remove="EndScreen.cs~RF2c6710.TMP" />
+    <None Remove="EndScreen.cs~RF668b19.TMP" />
+    <None Remove="FillTheBlanksScreen.cs~RFa873340.TMP" />
+    <None Remove="FillTheBlanksScreen.cs~RFeb7e70.TMP" />
+    <None Remove="GameScreen.resx~RF59b8e13.TMP" />
+    <None Remove="GameScreen.resx~RF5a16fb0.TMP" />
+    <None Remove="ks0h2qv4.ovf~" />
+    <None Remove="MultiChoiceScreen.cs~RF98d974.TMP" />
+    <None Remove="TrueFalseScreen.cs~RFa6c6f24.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
